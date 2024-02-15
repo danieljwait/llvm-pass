@@ -3,7 +3,7 @@ LLVM pass that prints out the number of functions and basic blocks in a given pr
 
 ## Build
 
-Ensure `clang` and `opt` version 15 are installed.
+Ensure `clang` and `opt` version 15 and `gnuplot` are installed.
 
 ```bash
 make
@@ -26,3 +26,5 @@ opt-15 -load build/CountingPass/libLLVMCountingPass.so \
   program.bc >/dev/null
 ```
 Will run the pass
+
+A histogram of number of instructions per basic block will be saved as `instr_per_bb.pdf`
