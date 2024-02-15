@@ -57,7 +57,7 @@ namespace
       file.close();
 
       // Produce histogram
-      system("gnuplot script.gnuplot > instr_per_bb.pdf");
+      system("gnuplot script.plt > instr_per_bb.pdf");
 
       // Remove temp file
       remove(data_file_name);
