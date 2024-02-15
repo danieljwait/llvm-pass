@@ -8,4 +8,4 @@ all:
 		cd ..
 
 clean:
-		rm -rf build *.bc
+		rm -rf build *.bc *.dat *.pdf
